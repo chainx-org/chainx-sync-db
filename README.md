@@ -22,7 +22,7 @@ export chainx=testnet
 # 使用步骤
 1. 确认主网或测试网环境
 2. 确认数据库表结构完好
-3. 确认同步解析程序已经启动(https://github.com/chainx-org/chainx-sync-parse 部署环境看下文的同步解析程序)
+3. 确认同步解析程序已经启动(https://github.com/chainx-org/chainx-sync-parse)
 4. 确认链节点已开启websocker
 5. 安装
 6. 更新配置文件相应配置项
