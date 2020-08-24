@@ -353,7 +353,10 @@ async function fix_order_fill_aver(last) {
                 //console.log(fill.rows)
                 fill = fill.rows
                 //console.log(fill_index[j],fill[0].id,fill[0].price,fill[0].amount)
-                sum += parseInt(fill[0].price) * parseInt(fill[0].amount)
+                if( fill.length > 0 ){
+                    sum += parseInt(fill[0].price) * parseInt(fill[0].amount)
+                }
+                
             }
             //console.log(sum,amount)
             let fill_aver = (sum / amount).toFixed(0)
